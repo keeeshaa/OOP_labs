@@ -12,6 +12,13 @@ public class Employee {
         this.ssn = ssn; 
         this.salary = salary;
     } 
+
+    public String toString () {
+        return  "Employee ID:	" + getEmpId() + "\n" +
+                "Employee Name:	" + getName() + "\n" + 
+                "Employee SSN:	" + getSsn() + "\n" +
+                "Employee Salary: " + getSalary();
+    }
         
 
     public int getEmpId() {

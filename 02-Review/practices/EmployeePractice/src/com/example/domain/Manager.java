@@ -14,6 +14,11 @@ public class Manager extends Employee{
         this.staff = new Employee[MAX_EMPLOYEES]; 
         this.employeeCount = 0;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\nDepartment:     " + getDeptName();
+    }
         
     public String getDeptName() {
         return deptName;
